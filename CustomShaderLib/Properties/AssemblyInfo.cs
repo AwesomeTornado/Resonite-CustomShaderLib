@@ -1,9 +1,9 @@
 ﻿using System.Reflection;
 
-[assembly: AssemblyTitle("ExampleMod")]
-[assembly: AssemblyProduct("ExampleMod")]
-[assembly: AssemblyDescription("Description of your mod")]
-[assembly: AssemblyCompany("ExampleAuthor")]
-[assembly: AssemblyCopyright("Copyright © 2025 ExampleAuthor")]
+[assembly: AssemblyTitle("CustomShaderLib")]
+[assembly: AssemblyProduct("CustomShaderLib")]
+[assembly: AssemblyDescription("Allows for easy use of custom shaders in Resonite")]
+[assembly: AssemblyCompany("Awesome_Tornado_")]
+[assembly: AssemblyCopyright("Copyright © 2025 Awesome_Tornado_")]
 [assembly: AssemblyVersion(ExampleMod.ExampleMod.VERSION_CONSTANT)]
 [assembly: AssemblyFileVersion(ExampleMod.ExampleMod.VERSION_CONSTANT)]
