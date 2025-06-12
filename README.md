@@ -15,5 +15,5 @@ I (\_\_Choco\_\_, or AwesomeTornado) did NOT create any of the functionality of 
  - [AllShadersValid](https://github.com/EIA485/NeosAllShadersValid)
  - [AnyShaderAnywhere](https://github.com/eia485/NeosAnyShaderAnywhere)
 
- This mod is a port of those NeosVR mods into Resonite, packeged together for simplicity.
+ This mod is a port of those NeosVR mods into Resonite, packaged together for simplicity.
  Credit goes to [EIA485](https://github.com/EIA485).
