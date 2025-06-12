@@ -1,5 +1,6 @@
 using System;
-
+using System.Threading.Tasks;
+using SkyFrost.Base;
 using FrooxEngine;
 using HarmonyLib;
 using ResoniteModLoader;
@@ -24,6 +25,16 @@ public class ExampleMod : ResoniteMod {
 			if (assetRef.Target == null)
 				assetRef.Target = (IAssetProvider<Shader>)AccessTools.Method(typeof(MaterialProvider), "GetSharedShader").Invoke(__instance, new object[] { url });
 			__result = assetRef.Target;
+			return false;
+		}
+	}
+
+	[HarmonyPatch(typeof(AssetInterface), "IsValidShader")]
+	class AllShadersValidPatch {
+		public static bool Prefix(ref Task<bool> __result) {
+			__result = Task<bool>.Run(() => {
+				return true;
+			});
 			return false;
 		}
 	}
