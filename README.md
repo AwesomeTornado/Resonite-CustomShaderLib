@@ -1,6 +1,6 @@
 # CustomShaderLib
 
-A [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for [Resonite](https://resonite.com/) that makes the process for adding custom shaders into the game far easier.
+A [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for [Resonite](https://resonite.com/) that allows for loading unverified shaders.
 <!-- Edit to describe what your mod does and what it may solve -->
 <!-- If your mod solves an issue, you should link to any relevant issues on the resonite github -->
 
