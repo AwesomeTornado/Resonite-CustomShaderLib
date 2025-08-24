@@ -8,7 +8,7 @@ using ResoniteModLoader;
 namespace CustomShaderLib;
 //More info on creating mods can be found https://github.com/resonite-modding-group/ResoniteModLoader/wiki/Creating-Mods
 public class CustomShaderLib : ResoniteMod {
-	internal const string VERSION_CONSTANT = "1.0.1"; //Changing the version here updates it in all locations needed
+	internal const string VERSION_CONSTANT = "1.0.2"; //Changing the version here updates it in all locations needed
 	public override string Name => "CustomShaderLib";
 	public override string Author => "__Choco__";
 	public override string Version => VERSION_CONSTANT;
@@ -19,7 +19,7 @@ public class CustomShaderLib : ResoniteMod {
 		harmony.PatchAll();
 	}
 
-	[HarmonyPatch(typeof(MaterialProvider), "EnsureSharedShader")]
+	[HarmonyPatch(typeof(MaterialProvider), "EnsureSharedShader")] 
 	class AnyShaderAnywherePatch {
 		public static bool Prefix(AssetRef<Shader> assetRef, Uri url, MaterialProvider __instance, ref IAssetProvider<Shader> __result) {
 			if (assetRef.Target == null)
